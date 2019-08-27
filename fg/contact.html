@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>FotoGrafi</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="IMAGES/icon2.png" type="image/gif">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  <link rel="stylesheet" href="all.css">
+  <style>
+    .par1{
+    
+    background-image: url(IMAGES/g19.jpeg);
+    min-height: 100%;
+
+}
+</style>
+</head>
+<body>
+    <div class="par1"> 
+        <div id="overlay"></div>
+
+<!-- Header with parallex effect -->
+
+    <header class="header_area">
+        <nav class="navbar navbar-expand-md ">
+            
+                <a class="navbar-brand" id="logo" href="index.html"><span class="logow">Foto</span><span class="logox">Grafi</span></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+                        <span class="navbar-toggler-icon">
+                                <div style="color:wheat;padding:1%;">
+                                <span><i class="fas fa-bars"></i></span>
+                            </div>
+                            </span>
+                </button>
+                <div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+                    <ul class="nav navbar-nav menu_nav ml-auto ">
+                            <li class="nav-item"><a class="nav-link hm" href="index.html">Home</a></li> 
+                            <li class="nav-item"><a class="nav-link hm" href="gallery.html">Gallery</a></li>
+                            <li class="nav-item"><a class="nav-link hm" href="services.html">Services</a></li>
+                            <li class="nav-item"><a class="nav-link hm" href="aboutus.html">About</a></li>
+                            <li class="nav-item  active"><a class="nav-link hm" href="contact.html">Contact</a></li>
+							<li class="nav-item"><span ><div class="nav-link"><i class="fas fa-user-tie hm hm1" style="font-size:150%;" onclick="tog()"></i></div></span></li>
+                    </ul>
+                </div> 
+            
+        </nav>
+    </header>
+    <div class="h">
+        <span>CONTACT US</span>
+    </div>
+</div>
+
+<!-- Hidden Admin login -->
+
+<div class="slbElement1" id="sub">
+    <div class="slbOverlay"></div>
+    <div class="slbWrapOuter">
+        <div class="slbWrap">
+            <div class="slbContentOuter">
+                <div class="slbContent">
+                    <div class="slbImageWrap film">
+                        <div class="fmcadmin">
+     
+                
+                            <div>
+                                <h3 style="padding-right:65%;padding-bottom:2%;">Admin Login</h3>
+                                <div class="form-inline">
+                                        <label for="Username">Username:</label>
+                                        <input type="text" class="form-control" name="uname" id="uname" placeholder="e.g : John78" required>
+                                      </div>
+                                      <br>
+                                  
+                                    <div class="form-inline">
+                                      <label for="email">Password :</label>
+                                      <input type="password" class="form-control" name="pwd" id="pwd" placeholder="e.g : * * * * * * *" required>
+                                    </div>
+                                    <br>
+                                 <div class="but"><input type="button" onclick="log()" name="add" value="Submit" class="btn btn-primary"  style="font-size:80%;background-color: wheat;color: #04091e;"></div>
+                                 </div>
+                              
+                           </div>  
+                         
+                        </div> 
+                    </div>
+                </div>
+                <button type="button" title="Close" class="slbCloseBtn " onclick="myFunction()">×</button>
+            </div>
+        </div>
+    </div>
+
+<!-- Contact details -->
+
+<div style="background-color:#04091e;color:#fff;">
+    <div class="contact_area ">
+        <div class="cont">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="contact_info" style="text-align:left;">
+                        <div class="info_item">
+                            <p><span><i class="fas fa-home"></i></span>&nbsp;&nbsp;Karnataka, India</p>
+                            
+                            <p>Belgaum Nath Pai Circle</p>
+                        </div>
+                        <div class="info_item">
+                            <p> <span><i class="fas fa-phone-square"></i></span><a style="color:#fff;" href="#">&nbsp;&nbsp;+91 8822776655</a></p>
+                           
+                            <p>Mon to Fri 9am to 6 pm</p>
+                        </div>
+                        <div class="info_item">
+                            <p><span><i class="fas fa-envelope-open"></i></i></span><a style="color:#fff;" href="#">&nbsp;&nbsp;myemail@something.com</a></p>
+                            
+                            <p>Contact us anytime!</p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Messaging block to send some msg to photographer -->
+                <div class="col-lg-9">
+                    <form class="row contact_form" action="PHP/contac.php" method="post" id="contactForm" novalidate="novalidate">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="name" name="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Enter email address" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="subject" name="subj" placeholder="Enter Subject" required>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <textarea class="form-control" name="msgj" id="msg" rows="1" placeholder="Enter Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-12 text-right">
+                            <button class="btn btn-default pull-right" type="submit" name="sub" value="true">Send Message</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Footer with map and feedback form  -->
+<div id="contact" class="container-fluid">
+	<h2 class="text-center" style="color:#fff">CONTACT</h2>
+
+
+	<div class="row des">
+	  
+
+
+
+
+            <!-- Contact details -->
+			<div class="col-sm-4 des">
+				<p style="color:#fff">Contact us and we'll get back to you within 24 hours.</p>
+				<p style="color:#fff"><span><i class="fas fa-map-marker-alt"></i></span>   &nbsp;Belgaum, Karnataka, India</p>
+				<p style="color:#fff"><span ></span><i class="fas fa-phone"></i></span>&nbsp;+91 8822776655</p>
+				<p style="color:#fff"><span></span><i class="fas fa-envelope"></i></span> &nbsp;myemail@something.com</p>
+			</div>
+
+
+			<div class="col-sm-4 slideanim slide des ">
+				
+					<!-- Feedback form -->
+					<div class="row"> 
+							<form action="PHP/feedback.php" method="POST">
+								<div class="row cone">
+									<div class="col-md-6 form-group des ">
+									<input class="form-control" id="name" name="name" placeholder="Name" type="text" required="">
+									</div>
+									<div class="col-md-6 form-group des">
+									<input class="form-control" id="email" name="email" placeholder="Email" type="email" required="">
+									</div>	
+								</div>
+								<div class="row cone">
+									<div class="col-md-12 form-group">
+											<textarea class="form-control" id="comments" name="feed" placeholder="Feedback" rows="5"></textarea><br>				
+									</div>						
+								</div>
+								<div class="row cone">
+										<div class="col-md-12 form-group des">
+												<button class="btn btn-default pull-right" type="submit" name="foot" value="true">Send</button>
+										</div>						
+								</div>							
+							</form>
+					</div>
+							
+
+					<!-- Contact icons -->
+					<div class="row">							
+                        <div class="des d-flex text-center">
+                            <div class="clear col-md-3 "> 
+                            <a  href="https://www.google.com"><i class="fab fa-google-plus-g gp"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="clear col-md-3"> 
+                            <a  href="https://twitter.com"><i class="fab fa-twitter tw" ></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="clear col-md-3"> 
+                            <a  href="https://www.facebook.com/"><i class="fab fa-facebook-f fb"></i></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+                            <div class="clear col-md-3"> 
+                            <a  href="https://www.instagram.com"><i class="fab fa-instagram insta" ></i></a></div>
+                        
+                    </div>
+					</div>
+			</div>
+			
+			
+			
+			
+			<!-- google maps -->
+			<div class="col-sm-4 form-group desw" >
+					<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d3838.317358415698!2d74.516384!3d15.839909!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d15.8398846!2d74.51725789999999!5e0!3m2!1sen!2sin!4v1543328040856" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>	
+			</div>
+		
+		
+		
+		
+		</div>
+
+
+
+
+
+  </div>
+
+<!-- javascript -->
+<script type="text/javascript">
+        // function to close admin login
+    function myFunction() 
+        {
+            var x = document.getElementById("sub");
+            x.style.display = "none";
+        }
+        // function to validate admin login
+    function log() 
+        {
+            var uname1 = document.getElementById("uname").value;
+		    var pwd1 = document.getElementById("pwd").value;
+			if( uname1 == 'admin')
+				{
+					if(pwd1 == 'admin')
+						{
+							window.location.href='PHP/admin.php';
+						}
+					else
+                        {
+							alert('Invalid Password');
+						}
+				}
+			else
+                {
+					alert('Invalid Username ');
+				}
+                         
+        }
+            // function to activate admin login                                 
+    function tog() 
+        {
+            var x = document.getElementById("sub");
+            x.style.display = "block";
+        }
+
+
+    // var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    // (function(){
+    // var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    // s1.async=true;
+    // s1.src='https://embed.tawk.to/5bff7e9c40105007f37a1e04/default';
+    // s1.charset='UTF-8';
+    // s1.setAttribute('crossorigin','*');
+    // s0.parentNode.insertBefore(s1,s0);
+    // })();
+    </script>
+</body>
+</html>
