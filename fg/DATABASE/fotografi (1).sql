@@ -40,10 +40,10 @@ CREATE TABLE `contact` (
 --
 
 INSERT INTO `contact` (`name`, `email`, `subd`, `msgd`) VALUES
-('Chaitanya', 'chaitanyamaralihalli18@gmail.com', 'Improvement', 'Improvement in mail system mail are not being rece'),
+('Chaitanya', 'abc@gmail.com', 'Improvement', 'Improvement in mail system mail are not being rece'),
 ('Bob', 'bob@gmail.com', 'Improvement', 'Site can still improve '),
-('Mahantesh', 'mantupv@gmail.com', 'Date Clash', 'There is a clash in dates contact me as soon as po'),
-('Ashish', 'apnightfury@gmail.com', 'Date Clash', 'There is a clash in dates plz contact me on email ');
+('Mahantesh', 'ma@gmail.com', 'Date Clash', 'There is a clash in dates contact me as soon as po'),
+('Ashish', 'ap@gmail.com', 'Date Clash', 'There is a clash in dates plz contact me on email ');
 
 -- --------------------------------------------------------
 
@@ -62,10 +62,10 @@ CREATE TABLE `feedback` (
 --
 
 INSERT INTO `feedback` (`name`, `email`, `feed`) VALUES
-('Mahantesh', 'mantupv@gmail.com', 'Good job'),
-('Ashish', 'apnightfury@gmail.com', 'Good photographs good price'),
+('Mahantesh', 'ma@gmail.com', 'Good job'),
+('Ashish', 'ap@gmail.com', 'Good photographs good price'),
 ('Bob', 'bob@gmail.com', 'No good expirence, arrived late at event'),
-('Chaitanya', 'chaitanyamaralihalli18@gmail.com', 'Professional Photographers good job, nice clicks ');
+('Chaitanya', 'abc@gmail.com', 'Professional Photographers good job, nice clicks ');
 
 -- --------------------------------------------------------
 
@@ -89,9 +89,9 @@ CREATE TABLE `form` (
 --
 
 INSERT INTO `form` (`name`, `email`, `phone`, `padd`, `eadd`, `services`, `price`, `dt`) VALUES
-('Ashish', 'apnightfury@gmail.com', '8197500885', 'Belgaum, Angol', 'Goa, Madgaon', 'TRAVEL-PHOTOGRAPHY', '35,000-49,999', '2018-01-10'),
-('Chaitanya', 'chaitanyamaralihalli18@gmail.com', '7722883344', 'Belgaum, City', 'Goa, Shiroda', 'LIFESTYLE-PHOTOGRAPHY', '20,000-34,999', '2018-01-11'),
-('Mahantesh', 'mantupv@gmail.com', '8904144770', 'Belgaum, Jain clg', 'Belgaum, Jain clg', 'SPORTS-PHOTOGRAPHY', 'FROM 50,000', '2018-06-20'),
+('Ashish', 'ap@gmail.com', '819785', 'Belgaum, Angol', 'Goa, Madgaon', 'TRAVEL-PHOTOGRAPHY', '35,000-49,999', '2018-01-10'),
+('Chaitanya', 'abc@gmail.com', '783344', 'Belgaum, City', 'Goa, Shiroda', 'LIFESTYLE-PHOTOGRAPHY', '20,000-34,999', '2018-01-11'),
+('Mahantesh', 'ma@gmail.com', '890770', 'Belgaum, Jain clg', 'Belgaum, Jain clg', 'SPORTS-PHOTOGRAPHY', 'FROM 50,000', '2018-06-20'),
 ('Bob', 'bob@gmail.com', '1234567890', 'Belgaum, Piranwadi', 'Mumbai, Thane', 'POST-WEDDING', '10,000-19,999', '2018-12-26');
 
 --
